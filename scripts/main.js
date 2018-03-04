@@ -1,4 +1,5 @@
-(function(window){
+//IIFE to start up
+(function (window) {
   "use strict";
   var App = window.App;
   var Truck = App.Truck;
