@@ -8,6 +8,8 @@
   }
 
   Truck.prototype.submitPayment = function (payment){
+    
+
     console.log("Payment has been added for " + payment.cardnumber);
     this.db.add(payment.cardnumber, payment);
 
