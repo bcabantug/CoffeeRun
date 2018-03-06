@@ -1,4 +1,4 @@
-//IIFE for module
+//IIFE for module DataStore
 (function(window){
   "use strict";
   //checks to see if the App property is present to assign, or create new object if not present
