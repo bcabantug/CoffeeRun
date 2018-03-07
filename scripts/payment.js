@@ -1,5 +1,5 @@
 //IIFE to start up
-(function (window) {
+(function(window) {
   "use strict";
   var FORM_SELECTOR = "[data-payment=\"form\"]";
   var MESSAGE_SELECTOR = "[data-payment=\"saying\"]";
@@ -16,7 +16,7 @@
   var formHandler = new FormHandler(FORM_SELECTOR);
 
 
-  formHandler.addSubmitHandler( function (data){
+  formHandler.addSubmitHandler(function(data) {
     myTruck.submitPayment.call(myTruck, data);
     confirm.addInfo.call(confirm, data);
 
