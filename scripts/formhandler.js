@@ -18,6 +18,7 @@
 
   FormHandler.prototype.addSubmitHandler = function(fn) {
     /*ESLint error: unexpected console statment*/
+    /*eslint-disable no-console*/
     console.log("Setting submit handler for form");
 
     this.$formElement.on("submit", function(event) {

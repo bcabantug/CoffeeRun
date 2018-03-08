@@ -8,7 +8,7 @@
   }
 
   Truck.prototype.submitPayment = function(payment) {
-    /*ESLint error: unexpected console statment*/
+    /*eslint-disable no-console*/
     console.log("Payment has been added for " + payment.cardnumber);
     this.db.add(payment.cardnumber, payment);
   };
@@ -19,7 +19,7 @@
 
   Truck.prototype.printOrders = function() {
     var customerIdArray = Object.keys(this.db.getAll());
-    /*ESLint error: unexpected console statment*/
+    /*eslint-disable no-console*/
     console.log("Truck #" + this.truckId + "has pending orders: ");
     customerIdArray.forEach(function(id) {
       console.log(this.db.get(id)); /*ESLint error: unexpected console statment*/
